@@ -85,10 +85,10 @@
 		87DC4D492386985A00A09177 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				87DC4D472386984E00A09177 /* Question.swift */,
+				8772D3462386A61100B3C1AF /* Answer.swift */,
 				8772D3482386A73700B3C1AF /* AnimalType.swift */,
 				87DC4D4F2386A53E00A09177 /* ResponseType.swift */,
-				8772D3462386A61100B3C1AF /* Answer.swift */,
-				87DC4D472386984E00A09177 /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
