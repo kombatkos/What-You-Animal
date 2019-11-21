@@ -6,10 +6,8 @@
 //  Copyright © 2019 Konstantin Porokhov. All rights reserved.
 //
 
-import Foundation
-
 enum ResponseType {
     case single
-    case mulpiple
+    case multiple
     case ranged
 }
