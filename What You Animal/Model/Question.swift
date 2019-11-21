@@ -10,6 +10,6 @@ import Foundation
 
 struct Question {
     var text: String
-    var type: String
+    var type:
     var unswers: [String]
 }
