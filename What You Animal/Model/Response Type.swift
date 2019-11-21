@@ -1,5 +1,5 @@
 //
-//  Questions.swift
+//  Response Type.swift
 //  What You Animal
 //
 //  Created by kot on 21/11/2019.
@@ -8,8 +8,3 @@
 
 import Foundation
 
-struct Question {
-    var text: String
-    var type: String
-    var unswers: [String]
-}
