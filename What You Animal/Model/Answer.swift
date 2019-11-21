@@ -1,15 +1,12 @@
 //
-//  Questions.swift
+//  Answer.swift
 //  What You Animal
 //
 //  Created by kot on 21/11/2019.
 //  Copyright © 2019 Konstantin Porokhov. All rights reserved.
 //
 
-import Foundation
-
-struct Question {
+struct Answer {
     var text: String
-    var type: ResponseType
-    var unswers: [String]
+    var type: 
 }

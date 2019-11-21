@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8772D3472386A61100B3C1AF /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772D3462386A61100B3C1AF /* Answer.swift */; };
+		8772D3492386A73700B3C1AF /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772D3482386A73700B3C1AF /* AnimalType.swift */; };
 		87DC4D3223867D0B00A09177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC4D3123867D0B00A09177 /* AppDelegate.swift */; };
 		87DC4D3423867D0B00A09177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC4D3323867D0B00A09177 /* SceneDelegate.swift */; };
 		87DC4D3623867D0B00A09177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC4D3523867D0B00A09177 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8772D3462386A61100B3C1AF /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8772D3482386A73700B3C1AF /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 		87DC4D2E23867D0B00A09177 /* What You Animal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What You Animal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DC4D3123867D0B00A09177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87DC4D3323867D0B00A09177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,8 +85,10 @@
 		87DC4D492386985A00A09177 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				87DC4D472386984E00A09177 /* Question.swift */,
+				8772D3482386A73700B3C1AF /* AnimalType.swift */,
 				87DC4D4F2386A53E00A09177 /* ResponseType.swift */,
+				8772D3462386A61100B3C1AF /* Answer.swift */,
+				87DC4D472386984E00A09177 /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,10 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				87DC4D3623867D0B00A09177 /* ViewController.swift in Sources */,
+				8772D3472386A61100B3C1AF /* Answer.swift in Sources */,
 				87DC4D482386984E00A09177 /* Question.swift in Sources */,
 				87DC4D3223867D0B00A09177 /* AppDelegate.swift in Sources */,
 				87DC4D3423867D0B00A09177 /* SceneDelegate.swift in Sources */,
 				87DC4D502386A53E00A09177 /* ResponseType.swift in Sources */,
+				8772D3492386A73700B3C1AF /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
