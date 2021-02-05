@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="What_You_Animal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="What_You_Animal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
         <!--Вопрос №-->
         <scene sceneID="e43-bb-7Tq">
             <objects>
-                <viewController id="VEU-lR-k4z" sceneMemberID="viewController">
+                <viewController id="VEU-lR-k4z" customClass="QuestionViewController" customModule="What_You_Animal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ywG-E3-dV0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,6 +223,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="XyM-xY-nfy"/>
                     <connections>
+                        <outletCollection property="stackSingle" destination="0aG-Az-4bY" collectionClass="NSMutableArray" id="TkM-fG-Y1o"/>
+                        <outletCollection property="stackMultiple" destination="zSn-3Y-p39" collectionClass="NSMutableArray" id="30S-ag-r3D"/>
+                        <outletCollection property="stackMultiple" destination="wxd-Zp-qLN" collectionClass="NSMutableArray" id="jaT-sc-rlf"/>
+                        <outletCollection property="stackRanged" destination="wxd-Zp-qLN" collectionClass="NSMutableArray" id="r3i-0g-pFj"/>
+                        <outletCollection property="stackSingle" destination="wxd-Zp-qLN" collectionClass="NSMutableArray" id="HKf-AC-bAm"/>
                         <segue destination="Bbd-pb-5fn" kind="show" identifier="result segue" id="NlW-fC-jSD"/>
                     </connections>
                 </viewController>
@@ -233,7 +238,7 @@
         <!--Результаты-->
         <scene sceneID="m8d-i7-H8j">
             <objects>
-                <viewController id="Bbd-pb-5fn" sceneMemberID="viewController">
+                <viewController id="Bbd-pb-5fn" customClass="ResultsViewController" customModule="What_You_Animal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iya-14-3d1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,10 +270,15 @@
                         <viewLayoutGuide key="safeArea" id="RLS-6w-YpK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Результаты" id="MIS-JH-0cJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KJ2-c4-Mtx"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KJ2-c4-Mtx">
+                            <connections>
+                                <segue destination="8bd-LZ-9Wj" kind="unwind" unwindAction="unwindSegue:" id="CXM-Fx-fru"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtb-nc-Nzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8bd-LZ-9Wj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1696.875" y="192.25352112676057"/>
         </scene>

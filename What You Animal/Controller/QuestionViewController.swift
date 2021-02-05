@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuestionViewController.swift
 //  What You Animal
 //
 //  Created by kot on 21/11/2019.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class QuestionViewController: UIViewController {
+    @IBOutlet var stackSingle: [UIStackView]!
+    @IBOutlet var stackMultiple: [UIStackView]!
+    @IBOutlet var stackRanged: [UIStackView]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
-
